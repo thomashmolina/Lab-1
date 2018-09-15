@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--bootstrap CSS-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!--bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!--CSS main file-->
+<link rel="stylesheet" type="text/css" href="main.css">
+<!--image regulator-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<header>
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Portfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-link active">
+        <a class="nav-link" href="ThomasPortfolio.html" style = "color:black">Home</a>
+        <br>
+      </li>
+      <li class="nav-link active">
+        <a class="nav-link" href="Projects.html" style = "color:black">Projects</a>
+        <br>
+      </li>
+      <li class="nav-link active">
+        <a class="nav-link" href="Contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</header>
+<body>
+ <div class="container">
+   <div class = "row">
+    <div class="col-sm-auto">
+      <br>
+      <br>
+      <h2><center>Thomas Molina</center></h2>
+      <center>
+      <img src = pic.jpg style = "max-width:350px" style = "width:100%">
+      </center>
+    </div>  
+    <div class = "col-sm-auto">
+      <h2>
+        <br>
+        <br>
+        <br>
+        Amateur Web-Designer<br>
+      </h2>
+      <h3>
+        <li>Native of Beaverton, Oregon</li>
+        <li>Bioinformatics Major at BYU </li>
+        <li>National Racquetball Champion </li>
+        <li>Taco Enthusiast</li>
+      </h3>
+      <br>
+      <h2>Special Skills</h2>
+      <h3>
+        <ol>
+        <li>Can do a backflip on solid ground</li>
+        <li>Can eat an entire Chipotle burrito in under a minute</li>
+        <li>Can solve a rubix cube in <em>under</em> two minutes</li>
+        <li>Benches <b>315</b> pounds</li>
+        </ol>
+      </h3>
+    </div>    
+   </div>
+  </div>
+<center>
+<img src="ghost.png" id = "ghost" width = 10%></img>
+<button onclick = "removeGhost()" id = "caption"> 
+Remove Spooky Ghost! 
+</button>
+</center>
+</body>
+
+
+
+<div class = "footer">
+  Created 9-18-18
+</div>
+
+</html>
+
+<script>
+function removeGhost() {
+    var elem = document.getElementById("ghost");
+    elem.parentNode.removeChild(elem);
+    return false;
+}
+</script>
