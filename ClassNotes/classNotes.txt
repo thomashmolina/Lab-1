@@ -1,0 +1,33 @@
+Jscript
+Asynchronous Function Calls
+- HTML DOM events on w3 Schools
+- the function activates on an action taken from the user
+    ~ onpress, keydown etc.
+- can make calls to REST services
+    ~ returns raw data to us
+    ~ json object
+        (java script object notation)
+    ~ text based exchange
+
+REST Interface
+- returns json object (data), not html
+- Application Program Interface (API) (REST API)
+- allows to specify information you want
+
+maps.googleapis.com/maps/api/geocode/json?address=chicago&sensor=false
+- returns information from google api that returns map data of chicago
+    ~ things like latitude, longitude, names, types, etc.
+
+Jquery
+- javascript library
+    $( "button.continue").html("Next Step...")
+    ~ takes the button with class continue, changes the html to "Next Step..."
+- can do a lot
+    - manipulate dom (Document Object Model)
+        ~ e.g. "document.get"
+    - ajax calls (asynchronous javascript and xml)
+        ~ contacts a REST service and then does something when theresponse comes back
+    - handles events
+        ~ can take functions and modify html
+
+Enterprise Web Programming
